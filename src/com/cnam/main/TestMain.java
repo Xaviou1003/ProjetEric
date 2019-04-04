@@ -26,7 +26,7 @@ public class TestMain {
 		List<Utilisateur> csvUtilisateurs = lecture.lireFichierCsv(fileName);
 
 		ServiceUtilisateur serviceUtilisateur = new ServiceUtilisateur();
-		//serviceUtilisateur.initDB();
+
 		int totalUtilisateur = csvUtilisateurs.size() - 1;
 		int numberUtilisateurInsere = 0;
 		Logger.info("Ligne 1: ignorée");
