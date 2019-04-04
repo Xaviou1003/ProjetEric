@@ -15,10 +15,10 @@ public class ServiceUtilisateur {
 	
 	public ServiceUtilisateur(){
 		this.connection = Connexion.laConnexion();
-		this.initDB();
+		//this.initDB();
 	}
 
-	private void initDB() {
+	/*private void initDB() {
 		try (Statement statement = this.connection.createStatement()) {
 			//prep.setString(1, "Utilisateurs");
 			statement.execute("DELETE FROM Utilisateurs WHERE ID >= 1");
@@ -27,7 +27,7 @@ public class ServiceUtilisateur {
 			System.err.println("SQLState: "+ ex.getSQLState());
 			System.err.println("VendorError: "+ ex.getErrorCode());
 		}
-	}
+	}*/
 	
 	public int insererUtilisateur(Utilisateur utilisateur) {
 		String userEmail = utilisateur.getEmail();
